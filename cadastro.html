@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/cadastro.css">
 </head>
 <body>
-    
+    <main class="container-cadastro">
+        <div class="topo-cadastro"> 
+            <div class="cadastro">
+                <h2 class="cadastro-escrito">Cadastro</h2>
+                <p class="descricao"> Crie uma noca conta de usuario para o Arum Lab</p>
+            </div>
+            <img src="assets/img/icone-logo.svg" alt="">
+        </div>
+        <!--* Lado esquerdo -->
+        <section class="lado-esquerdo">
+            <form class="Nome">
+                <label for="nome-usuario">Nome Completo:</label>
+                <input type="name" id="name" placeholder="seu nome">
+            </form>
+
+            <label for="email">Email:</label>
+            <div class="campo-email">
+                <input type="email" id="email" placeholder="email@gmail.com">
+            </div>
+        </section>
+
+        <!--* Lado direito -->
+        <section class="lado-direito">
+            <label for="senha">Senha:</label>
+                <input type="password" id="senha" placeholder="*****************">
+            <label for="confirmar-senha">Confirmar senha</label>
+                <input type="password" id="senha" placeholder="*************">
+            
+        </section>
+
+    </main>
+
 </body>
 </html>
