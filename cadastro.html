@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +8,50 @@
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/cadastro.css">
 </head>
+
 <body>
     <main class="container-cadastro">
-        <div class="topo-cadastro"> 
+        <div class="topo-cadastro">
             <div class="cadastro">
                 <h2 class="cadastro-escrito">Cadastro</h2>
-                <p class="descricao"> Crie uma noca conta de usuario para o Arum Lab</p>
+                <p class="descricao"> Crie uma nova conta de usuario para o Arum Lab</p>
             </div>
-            <img src="assets/img/icone-logo.svg" alt="">
+            <div class="imagem">
+                <img src="assets/img/icone-logo.svg" alt="">
+            </div>
         </div>
         <!--* Lado esquerdo -->
-        <section class="lado-esquerdo">
-            <form class="Nome">
-                <label for="nome-usuario">Nome Completo:</label>
-                <input type="name" id="name" placeholder="seu nome">
-            </form>
+        <div class="dados">
+            <section class="lado-esquerdo">
+                <form class="campo-nome">
+                    <label for="nome-usuario">Nome Completo:</label>
+                    <input type="name" id="name" placeholder="seu nome">
+                </form>
 
-            <label for="email">Email:</label>
-            <div class="campo-email">
-                <input type="email" id="email" placeholder="email@gmail.com">
-            </div>
-        </section>
+                <form class="campo-email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="email@gmail.com">
+                </form>
+            </section>
 
-        <!--* Lado direito -->
-        <section class="lado-direito">
-            <label for="senha">Senha:</label>
-                <input type="password" id="senha" placeholder="*****************">
-            <label for="confirmar-senha">Confirmar senha</label>
-                <input type="password" id="senha" placeholder="*************">
-            
-        </section>
+            <!--* Lado direito -->
+            <section class="lado-direito">
+                <form class="campo-senha">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" placeholder="*****************">
+                </form>
+                <form class="campo-confirmar-senha">
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input type="password" id="senha" placeholder="*************">
+                </form>
+            </section>
+        </div>
+
+        <button class="entrar" type="submit">ENTRAR</button>
+        <a href="#" class="link-voltar">Voltar</a>
 
     </main>
 
 </body>
+
 </html>
